@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+    <div class="container">
+        <h2>Course Registration Form</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="course">Select Course:</label>
+                <select id="course" name="course" required>
+                    <option value="" disabled selected>Select a course</option>
+                    <option value="web-development">Web Development</option>
+                    <option value="data-science">Data Science</option>
+                    <option value="ai-ml">AI & ML</option>
+                    <option value="cyber-security">Cyber Security</option>
+                </select>
+            </div>
+            <br>
+            <div class="form-group">
+                <button type="submit" class="btn">Register</button>
+            </div>
+        </form>
+        <br>
+        <h2>Contact Form</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name..">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email..">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your message.." rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn">submit</button>
+            </div>
+        </form>
+        <br>
+        <h2>Job Application Form</h2>
+        <form>
+            <div class="form-group">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="position">Position Applying For:</label>
+                <input type="text" id="position" name="position" placeholder="Enter the job position" required>
+            </div>
+            <div class="form-group">
+                <label for="experience">Years of Experience:</label>
+                <input type="number" id="experience" name="experience" placeholder="Enter your experience in years" min="0" required>
+            </div>
+            <div class="form-group">
+                <label for="resume">Upload Resume:</label>
+                <input type="file" id="resume" name="resume" required>
+            </div>
+            <div class="form-group">
+                <label for="cover-letter">Cover Letter:</label>
+                <textarea id="cover-letter" name="cover-letter" placeholder="Briefly describe why you're a good fit for the job..." rows="6" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn">Submit Application</button>
+            </div>
+        </form>
+        <br>
+        <form>
+            <h2>Appointment Form</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+    
+            <label for="appointmentdate">Appointment Date:</label>
+            <input type="date" id="appointmentdate" name="appointmentdate" required>
+    
+            <label for="appointmenttime">Appointment Time:</label>
+            <input type="time" id="appointmenttime" name="appointmenttime" required>
+    
+            <label for="reason">Reason for Appointment:</label>
+            <textarea id="reason" name="reason" rows="4" required></textarea>
+    
+            <button type="submit" class="btn">Book Appointment</button>
+        </form>
+        <br>
+        <h2>On-Duty Application Form</h2>
+        <form>
+            <div class="form-group">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Date of On-Duty:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="reason">Reason for On-Duty:</label>
+                <textarea id="reason" name="reason" placeholder="Enter your reason..." rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="time">Time Period:</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <div class="form-group">
+                <label>Approval Required:</label>
+                <input type="radio" id="yes" name="approval" value="yes" required>
+                <label for="yes">Yes</label>
+                
+                <input type="radio" id="no" name="approval" value="no">
+                <label for="no">No</label>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn">Submit Application</button>
+            </div>
+        </form>
+        <br>
+        <h2>Leave Application Form</h2>
+        <form>
+            <div class="form-group">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="start-date">Start Date:</label>
+                <input type="date" id="start-date" name="start-date" required>
+            </div>
+            <div class="form-group">
+                <label for="end-date">End Date:</label>
+                <input type="date" id="end-date" name="end-date" required>
+            </div>
+            <div class="form-group">
+                <label for="reason">Reason for Leave:</label>
+                <textarea id="reason" name="reason" placeholder="Enter your reason..." rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn">Submit Application</button>
+            </div>
+        </form>
+        <br>
+        <h2>Sign-Up Form</h2>
+        <form>
+            <div class="form-group">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Choose a username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Create a password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn">Sign Up</button>
+            </div>
+        </form>
+        <br>
+        <h2>Login Form</h2>
+        <form>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn">Login</button>
+            </div>
+        </form>
+        <br>
+        <h2>Subscription Form</h2>
+        <form>
+\            <div class="form-group">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label>Subscription Type:</label>
+                <input type="radio" id="daily" name="subscription" value="daily" required>
+                <label for="daily">Daily</label>
+                
+                <input type="radio" id="weekly" name="subscription" value="weekly">
+                <label for="weekly">Weekly</label>
+
+                <input type="radio" id="monthly" name="subscription" value="monthly">
+                <label for="monthly">Monthly</label>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn">Subscribe</button>
+            </div>
+        </form>
+        <br>
+        <h2>Feedback Form</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="comments">Comments/Suggestions:</label>
+                <textarea id="comments" name="comments" placeholder="Enter your feedback..." rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn">Submit Feedback</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
